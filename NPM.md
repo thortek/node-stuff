@@ -30,6 +30,10 @@ separate out the package names with a space.
 npm install gulp gulp-less gulp-ng-annotate gulp uglify
 ```
 
+You can also install packages globally using the `-g` flag. Rather than install
+a module into your `node_modules` folder, it will install it in your
+`/usr/local/bin` directory to use as a CLI.
+
 ## How keep track of installed packages
 
 So you can use `npm install` to a package, but what if your `node_modules`
