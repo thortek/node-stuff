@@ -164,4 +164,20 @@ npm publish
 There's a lot more you need to know as you begin development, and the above link
 will help you with that.
 
+## Bonus round
+
+On Mac (and possibly linux), you may run into the issue of always having to
+`sudo npm install`. This is rather annoying. To fix this, use the following
+commands:
+
+```bash
+sudo chown -R `whoami` ~/.npm
+sudo chown -R `whoami` /usr/local/lib/node_modules
+```
+
+The above commands change the owner of the files (recursively) to your user. Not
+sure why the `~/.npm` path isn't already that way, but the `/usr/local` path
+is usually set to the system. I have set the whole `/usr/local` directory to my
+user to resolve any issues that have come up with other CLIs (homebrew, etc).
+
 [< README](README.md)
